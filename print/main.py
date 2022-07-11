@@ -6,4 +6,5 @@ __human_name__ = 'print'
 print("greetings")
 print("what is your name")
 print(20)
+print("la,la,la")
 
