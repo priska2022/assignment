@@ -36,16 +36,16 @@ first_name = player[:player.find(' ')]
 #print(player[:player.find(' ')])
 
 #use find methode, slicing and len to isolate the player's last name
-last_name_len = len(player[:player.find(' ',)+5])
+last_name_len = len(player[player.find(' ')+1 :])
 print(last_name_len)
 
 name_short = player[:1] + '.' + player[player.find(' '):]
 print(name_short)
 
-chant = (first_name + '! ') * 5
+chant = ((first_name + '! ') * len(first_name)).strip()
 print(chant)
 
-good_chant = chant != ' '
+good_chant = chant[-1:] != ' '
 print(good_chant)
 
 
